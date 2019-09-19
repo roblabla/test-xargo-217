@@ -1,0 +1,30 @@
+[dependencies.core]
+stage = 0
+path = "rust/src/libcore"
+
+[dependencies.compiler_builtins]
+version = "=0.1.19"
+stage = 0
+features = ["core", "mem"]
+
+[dependencies.alloc]
+stage = 1
+path = "rust/src/liballoc"
+
+#[dependencies.alloc]
+#stage = 0
+#path = "rust/src/liballoc"
+#
+#[dependencies.spin]
+
+
+#[dependencies.std]
+#stage = 1
+#features = ["panic-unwind"]
+#path = "rust/src/libstd"
+
+[patch.crates-io.rustc-std-workspace-core]
+path = "rust/src/tools/rustc-std-workspace-core"
+
+[patch.crates-io.rustc-std-workspace-alloc]
+path = "rust/src/tools/rustc-std-workspace-alloc"

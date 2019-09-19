@@ -1,0 +1,8 @@
+[package]
+
+name = "hello_world"
+version = "0.0.1"
+authors = ["Roblabla <robinlambetz+dev@gmail.com>"]
+
+[dependencies]
+spin = "0.5.2"
